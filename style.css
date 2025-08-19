@@ -1,0 +1,57 @@
+ body{
+        background-color: rgba(95, 158, 160, 0.322);
+    }
+    *{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .Navbar-brand{
+        font-size: 40px;
+    }
+ .hero{
+    min-width: 250px;
+    height: 200px;
+    line-height: 200px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+ }
+ img{
+    width: 300px;
+    padding: 15px;
+ }
+ .img{
+    width: 500px;
+    height: 500px;
+ }
+ .main{
+    background-color:white ;
+ }
+ .main div{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 5px;
+ }
+ .background{
+    background-image: url(IMAGE/hacker-6512174_1280.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+ }
+ .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    height: 100vh;
+ }
+ .laptops{
+    min-width: 250px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    height: 200px;
+    line-height: 200px;
+    display: flex;
+   }
+   
