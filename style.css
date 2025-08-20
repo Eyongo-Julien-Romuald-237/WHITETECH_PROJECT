@@ -3,18 +3,12 @@
     }
     *{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+        padding: 0;
     }
     .Navbar-brand{
         font-size: 40px;
     }
- .hero{
-    min-width: 250px;
-    height: 200px;
-    line-height: 200px;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
-    white-space: nowrap;
- }
  img{
     width: 300px;
     padding: 15px;
@@ -33,18 +27,19 @@
     margin: 5px;
  }
  .background{
-    background-image: url(IMAGE/hacker-6512174_1280.webp);
+    background-image: url(IMAGE/technology.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
  }
- .text {
+ .hero {
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     flex-direction: column;
     height: 100vh;
+    text-align: center;
  }
  .laptops{
     min-width: 250px;
@@ -54,4 +49,15 @@
     line-height: 200px;
     display: flex;
    }
-   
+   a :hover{
+      background-color: darkred;
+      color: aliceblue;
+   }
+   a{
+      transition: 1.5ms;
+   }
+   footer{
+      background-color: black;
+      padding: 10px;
+   }
+  

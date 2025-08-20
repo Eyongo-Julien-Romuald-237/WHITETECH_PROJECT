@@ -7,11 +7,35 @@
     <!-- bootstrap link -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
      <!-- CSS Styling -->
+      <style>
+        input{
+            border-radius: 10px;
+        }
+        input[type=button]{
+            transition: 1.5s;
+        }
+        input[type=button]:hover{
+            background-color: darkred;
+            color: aliceblue;
+        }
+        textarea{
+            border-radius: 10px;
+            padding: 10px;
+        }
+        address a:hover{
+            background-color: brown;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        address a{
+            transition: 1.5s;
+        }
+      </style>
 </head>
 <body>
-    <nav class="bg-dark p-2 fixed-top navbar-dark navbar-expand-lg d-flex justify-content-between">
+    <nav class="bg-dark p-2 navbar-dark navbar-expand-lg d-flex justify-content-between">
         <div class="container-fluid">
-            <a href="#" class="navbar-brand"  style="font-size: 40px;">Contact</a>
+            <a href="#" class="navbar-brand"  style="font-size: 40px;">Contact-page</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="Collapse" data-bs-target="#navbar-contact">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -30,19 +54,59 @@
             </ul>
         </div>
     </nav>
-    <!-- form -->
-      
-    <div class="container mt-5 p-5" style="background-color: red;">
+    <!-- form 
+    8. 📬 Contact Page
+Title:  
+"We’re Here to Help"
+Form Fields:  
+- Name  
+- Email  
+- Phone (optional)  
+- Message  
+- [ Send Message ]
+-->  
+    <div class="container mt-5 p-5" style="background-color: cadetblue; border-radius: 15px;">
+        <h2 class="text-center">"We’re Here to Help"</h2>
         <form action="" method="POST">
             <div class="mainrow">
-                <div class="row">
-                    <label for="name">Fullname</label>
+                <div class="row mt-3">
+                    <label for="name">Fullname:</label>
                     <input type="text" id="name" placeholder="fullname" required>
                 </div>
-                <div class="row">
-                    <label for="name">I</label>
-                    <input type="date" id="name" placeholder="fullname" required>
+                <div class="row mt-3">
+                    <label for="date">Contact date:</label>
+                    <input type="date" id="date"  required>
                 </div>
+                <div class="row mt-3">
+                    <label for="Phone">Phone number:</label>
+                    <input type="number" id="Phone" placeholder="Phone number" required>
+                </div>
+                <div class="row mt-3">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="email" required>
+                </div>
+                <div class="row mt-3">
+                    <label for="message">Message:</label>
+                    <textarea name="comment" id="message" placeholder="Give your impressions here" required></textarea>
+                </div>
+                <div class="row mt-5">
+                    <input type="button" value="Submit">
+                </div>
+                <!-- shop infoline
+                 Additional Info:  
+                - 📞 Phone: +237 6XX XXX XXX  
+                - ✉ Email: support@electrostore.cm  
+                - 📍 Address: Yaoundé, Cameroon -->
+                 <div class="row text-center mt-5 bg-info p-2" style="border-radius: 5px;">
+                    <address>
+                        <a href="#" class="text-light" style="text-decoration: none;">- 📞 Phone: 691-23-42-99/621-68-50-87</a>
+                        <br/> <br/>
+                        <a href="#" class="text-light" style="text-decoration: none;">✉ Email: eyongobitolo@gmail.com</a>
+                        <br/> <br/>  
+                        <p>📍 Address: Yaoundé, Cameroon</p>
+                    </address>
+                 </div>
+
 
             </div>
         </form>
