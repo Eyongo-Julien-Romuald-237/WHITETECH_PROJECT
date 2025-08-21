@@ -7,6 +7,15 @@
     <title>Home</title>
     <!-- css style -->
      <style>
+        body{
+             margin: 0;
+            padding: 0;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
         a:hover{
             background-color: darkred;
             border-radius: 10px;
@@ -20,13 +29,20 @@
             background-repeat: no-repeat;
         }
         h1 span{
-           
             color: aqua;
+        }
+        section{
+            flex: 3;
+            box-sizing: border-box;
+        }
+        .Featured{
+            display: flex;
+            flex-wrap: nowrap;
         }
      </style>
 </head>
 <body>
-    <nav class="bg-dark navbar-dark p-2  text-light navbar-expand-lg">
+    <nav class="bg-dark navbar-dark p-2 fixed-top text-light navbar-expand-lg">
         <div class="container d-flex justify-content-between">
             <a href="" class="navbar-brand">SMART-SALES</a>
             <div class="navbar nav">
@@ -55,64 +71,62 @@
             <!-- first article -->
              <article>
                 <h3 class="text-center mt-5">Featured Categories</h3>
-                <div class="row m-5">
-                    <div class="col">
-                        <h5>Smartphones</h5>
-                        <img src="" alt="telephone">
+                <div class="Featured row row-cols-3 m-5">
+                    <div class="col-sm-2">
+                        <h5 class="text-center">Smartphones</h5>
+                        <img src="IMAGE/technology.jpg" alt="telephone" style="width: 300px; border-radius: 5px;">
                     </div>
-                    <div class="col-sm">
-                        <h5>Accessories</h5>
-                        <img src="" alt="telephone">
+                    <div class="col-sm-2">
+                        <h5 class="text-center">Accessories</h5>
+                        <img src="IMAGE/gadget-1.jpg" alt="Gadgets" style="width: 200px; height: 200px; border-radius: 5px;">
                     </div>
-                    <div class="col-sm">
-                        <h5> Power Banks</h5>
-                        <img src="" alt="telephone">
+                    <div class="col-sm-2">
+                        <h5 class="text-center"> Power Banks</h5>
+                        <img src="IMAGE/gadget-2.jpg" alt="Gadgets" style="width: 200px; height: 200px; border-radius: 5px;">
                     </div>
-                    <div class="col-sm">
-                        <h5>Chargers
-</h5>
-                        <img src="" alt="telephone">
+                    <div class="col-sm-2">
+                        <h5 class="text-center">Chargers</h5>
+                        <img src="IMAGE/gadget-3.jpg" alt="Gadgets" style="width: 200px; height: 200px; border-radius: 5px;">
                     </div>
-                    <div class="col-sm">
-                        <h5> Smartwatches</h5>
-                        <img src="" alt="telephone">
+                    <div class="col-sm-2">
+                        <h5 class="text-center"> Smartwatches</h5>
+                        <img src="IMAGE/Gadget.jpg" alt="watches" style="width: 200px; height: 200px; border-radius: 5px;">
                     </div>
                 </div>
-
              </article>
-
-
+             <!-- Second article -->
+              <h3 class="text-center">Latest Products / Best Sellers</h3>
+              <div class="Latest row text-center">
+                <div class="col-sm-3 text-center">
+                    <img src="IMAGE/gadget-2.jpg" alt="" width="300px" height="300px" style="border-radius: 5px; object-fit: contain;">
+                    <figcaption>Drones - 80,000frs</figcaption>
+                </div>
+                <div class="col-sm-3 text-center">
+                     <img src="IMAGE/ordi_2.webp" alt="" width="300px" height="300px" style="border-radius: 5px; object-fit: contain;">
+                    <figcaption>Drones - 80,000frs</figcaption>
+                </div>
+                <div class="col-sm-3 text-center">
+                     <img src="IMAGE/ordi_2.webp" alt="" width="300px" height="300px" style="border-radius: 5px; object-fit: contain;">
+                    <figcaption>Drones - 80,000frs</figcaption>
+                </div>
+                <div class="col-sm-3 text-center">
+                     <img src="IMAGE/ordi_2.webp" alt="" width="300px" height="300px" style="border-radius: 5px; object-fit: contain;">
+                    <figcaption>Drones - 80,000frs</figcaption>
+                </div>
+              </div>
         </section>
-
-    <aside>
-            <h3>Browse Here:</h3>
-        <ul>
-                <li>
-                    <a href=""> 🛍 Shop Page</a>
-                </li>
-                    <li>
-                    <a href=""> 📄 Product Details Page</a>
-                </li>
-                <li>
-                    <a href="">🛒 Cart Page</a>
-                </li>
-                <li>
-                    <a href="">💳 Checkout Page</a>
-                </li>
-                <li>
-                    <a href="">🧑‍💼 Login / Register</a>
-                </li>
-                <li>
-                    <a href="">🧾 About-Us</a>
-                </li>
-                <li>
-                    <a href="">📬 Contact Page</a>
-                </li>
-        </ul>
-            
-    </aside>
-
     </main>
+    <!-- footer -->
+     <footer>
+         <div class="container">
+            <div class="row">
+                <div class="col text-danger">Quick links :</div>
+                <div class="col text-danger">Services :</div>
+                <div class="col text-danger">Portfolio :</div>
+                <div class="col text-danger"> Connect :</div>
+            </div>
+        </div>
+     </footer>
 
 
     
